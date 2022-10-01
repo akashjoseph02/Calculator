@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+
+
+    <style>
+        body {
+          background-image: url('new.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <center>
+    <h2 style="color: white; padding-top: 200px;"><strong>SIMPLE INTEREST CALCULATOR</strong></h2><br>
+    <label style="color: white;" for="n1">Principal Amount</label><br>
+    <input Type="number" name="" id="first"><br>
+    <br>
+    <br>
+    <label style="color: white; padding-top: 200px;" for="n1">Interest Rate</label><br>
+    <input Type="number" name="" id="second"><br>
+    <br>
+    <br>
+    <label style="color: white; padding-top: 200px;" for="n1">Time</label><br>
+    <input Type="number" name="" id="third"><br>
+    <br>
+    <br>
+    <button onclick="SIcalc()">Calculate</button> <br>
+    <br>
+    <br>
+    <p style="color: black; padding: top 200px; font-size: 2rem;" id="result"></p>
+
+    </center>
+
+    <script src="script.js"></script>
+    <script>
+        function SIcalc(){
+            var a = document.getElementById("first").value;
+            var b = document.getElementById("second").value;
+            var c = document.getElementById("third").value;
+            console.log((Number(a)*Number(b)*Number(c))/100);
+            ans= (Number(a)*Number(b)*Number(c))/100;
+            document.getElementById("result").innerHTML = "The Simple Interest is Rs." + ans;
+        }
+    </script>
+    
+</body>
+</html> 
+
+
